@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+/*============================================
+                  COMMON CSS END
+============================================*/
+/*============================================
+               MENU PART START
+=============================================*/
+
+
+.main_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+}
+#menu .menu_bar ul{
+    display: flex;
+}
+
+.main_menu .company_name a{
+    font-weight: 700;
+    font-size: 30px;
+    color: #3A3A3A;
+}
+
+.main_menu .menu_bar ul li a{
+    font-weight: 600;
+    font-size: 18px;
+    color: #3A3A3A;
+    margin-left: 20px;
+    text-transform: capitalize;
+
+}
+/*=============================================
+                 MENU PART END
+=============================================*/
+/*=============================================
+                BANNER PART START
+=============================================*/
+.banner_part{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+.banner_left_part{
+    width: 50%;
+    padding: 90px 0;
+}
+
+.banner_left_part .banner_text h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: #3A3A3A;
+}
+
+.banner_left_part .banner_text p{
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    padding: 20px 0;
+}
+
+.banner_left_part .banner_text a{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #E02C6D;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: #ffff;
+    transition: .3s;
+}
+
+.banner_left_part .banner_text a i{
+    padding-left: 5px;
+}
+
+.banner_text a:hover i{
+    padding-left: 10px;
+}
+
+.banner_right_part{
+    width: 50%;
+    background: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner_right_part{
+    overflow: hidden;
+    transition: .3s;
+}
+
+.banner_right_part img{
+    overflow: hidden;
+    transition: .3s;
+}
+
+.banner_right_part:hover img{
+    transform: scale(1.2);
+}
+
+.banner_right_part img{
+    width: 80%;
+}
+/*=============================================
+                BANNER PART END
+=============================================*/
+/*=============================================
+               OUR PARTNERS PART START
+=============================================*/
+.our_partners{
+    padding-top: 50px;
+    position: relative;
+}
+
+.our_partners::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #C0CCDA;
+}
+
+.our_partners::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #C0CCDA;
+
+}
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.partners img{
+    width: 99px;
+    height: 40px;
+    margin: 0 25px;
+}
+/*=============================================
+               OUR PARTNERS PART END
+=============================================*/
+/*=============================================
+          PRODUCT COLLECTION PART START           
+=============================================*/
+.product_collection{
+    padding-top: 80px;
+}
+.product_collection h3{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #3A3A3A;
+}
+.product_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product{
+    background: #ffff;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow:  0 19px 38px rgba(0,0,0,0.30);
+}
+
+.product_img img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product_details h2{
+    font-weight: 400;
+    font-size: 30px;
+    color: #18191F;
+}
+
+.product_details p{
+    font-weight: 400;
+    font-size: 25px;
+    color: #0000;
+    padding-top: 30px;
+}
+.product_details .rattings{
+    display: flex;
+}
+
+.rattings i{
+    color: orange;
+    font-size: 10px;
+}
+
+.rattings span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #5E6366;
+}
+
+.prodcut_details h5{
+    font-weight: 600;
+    color: #787885;
+    font-size: 15px;
+}
+
+.see_more{
+    text-align: right;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.see_more a{
+    color: #E02C6D;
+}
+/*============================================
+           PRODUCT COLLECTION PART START           
+============================================*/
+/*============================================
+             BECOME A MEMBER PART START
+============================================*/
+.our_member{
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.member_img img{
+    width: 300px;
+    height: 300px;
+
+}
+
+.member_img{
+    width: 50%;
+}
+
+.member_text{
+    width: 50%;
+    padding-top: 20px;
+}
+
+.member_text p{
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.member_text a{
+    margin-top: 20px;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #E02C6D;
+}
+/*============================================
+             BECOME A MEMBER PART END
+============================================*/
+/*============================================
+                FOOTER PART START
+============================================*/
+#footer{
+    padding: 50px 0;
+    background: #0A0826;
+}
+
+.footer_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_text h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffff;
+}
+.footer_text p{
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer_text h5{
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffff;
+}
+
+.footer_text .social_media ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_text .social_media ul li a{
+    width: 32px;
+    height: 32px;
+    background: #3A3A3A;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*============================================
+                FOOTER PART END
+============================================*/
+

@@ -1,0 +1,70 @@
+@media only screen and (max-width: 688px) {
+
+    .container{
+        padding: 0 20px;
+    }
+
+    .company_name{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_bar{
+        display: none;
+    }
+
+    .banner_left_part{
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner_right_part{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+
+    .banner_part{
+        flex-direction: column-reverse;
+    }
+
+    .our_partners{
+        padding-top: 0;
+    }
+
+    .partners img{
+        width: 55px;
+    }
+
+    .product_list{
+        grid-template-columns: 1fr;
+    }
+
+    .member_img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .our_member{
+        flex-direction: column;
+    }
+
+    .member_text{
+        width: 100%;
+        text-align: center;
+    }
+}
+/*tablet*/
+
+@media only screen and (min-width:689px) and (max-width: 992px) {
+    .container {
+        padding: 0 30px;
+    }
+    .product_list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .partners img{
+        width: 42px;
+    }
+}
